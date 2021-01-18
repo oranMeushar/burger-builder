@@ -1,0 +1,25 @@
+.Header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: brown;
+    margin-bottom: 2vmin;
+}
+.Header nav{
+    display: flex;
+    align-items:center;
+}
+.Header a{
+    font-size: 3vmin;
+    text-decoration: none;
+    padding:2vmin;
+    color:rgb(176,224,230);
+}
+
+.Header a:hover{
+  color:rgb(71, 208, 226);
+}
+.Header .active{
+    color:rgb(71, 208, 226);
+    background-color:rgba(173, 216, 230, 0.192);
+}

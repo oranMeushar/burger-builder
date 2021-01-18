@@ -1,0 +1,71 @@
+.PanelButtons-container{
+    display:flex;
+    justify-content:center;
+}
+.PanelButtons{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items:center;
+    grid-column-gap: 3vmin;
+    margin: 3vmin 0;
+}
+
+.PanelButtons h2{
+    font-size: 3vmin;
+    letter-spacing:0.3vmin;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: flex-end;
+    
+}
+
+.PanelButtons-button-wrapper{
+    justify-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vmin;
+}
+
+.PanelButtons-button-wrapper button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vmin;
+    padding:0.5vmin 1vmin;
+    background-color: brown;
+    cursor: pointer;
+    outline: none;
+}
+
+.PanelButtons-less{
+    margin-right:2vmin;
+}
+.PanelButtons-less:disabled{
+    background-color:rgb(150, 150, 150);
+    cursor:not-allowed;
+}
+
+@media (max-width: 550px){
+    .PanelButtons{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 6vmin;
+    }
+
+    .PanelButtons h2{
+        font-size: 6vmin;        
+    }
+    .PanelButtons-button-wrapper button{
+        font-size: 5vmin;
+    }
+}
+
+/* @media (max-width: 450px){
+    .PanelButtons{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 6vmin;
+    }
+
+    .PanelButtons h2{
+        font-size: 6vmin;        
+    }
+    .PanelButtons-button-wrapper button{
+        font-size: 5vmin;
+    }
+} */

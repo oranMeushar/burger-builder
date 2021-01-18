@@ -1,0 +1,38 @@
+.BurgerBuilder-orderButton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vmin;
+    padding:1vmin 2vmin;
+    background-color: rgb(165, 126, 42);
+    outline: none;
+    color:white;
+    position: relative;
+}
+
+.BurgerBuilder-orderButton:hover{
+    background-color:olive;
+}
+.BurgerBuilder-orderButton:disabled{
+    background-color: rgb(165, 126, 42);
+    cursor:not-allowed;
+}
+
+.BurgerBuilder-price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vmin;
+    padding:1vmin 0;
+    text-transform: uppercase;
+}
+
+@media (max-width:550px){
+    .BurgerBuilder-price{
+        font-size: 5vmin;
+    }
+
+}
+
+@media (max-width:450px){
+    .BurgerBuilder-orderButton{
+        font-size: 5vmin;
+    }
+
+}

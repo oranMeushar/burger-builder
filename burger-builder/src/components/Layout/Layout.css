@@ -1,0 +1,7 @@
+.Layout{
+    background:linear-gradient(rgba(20, 18, 18, 0.493), rgba(0, 0, 0, 0.363)), url('../../assets/burger.jpg') center no-repeat;
+    background-size: cover;
+    padding-bottom: 3vmin;
+    min-height: 100vh;
+    color:white;
+}
