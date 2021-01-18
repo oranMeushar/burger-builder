@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/PageNotFound/PageNotFound.css"],"names":[],"mappings":"AAAA,gBACI,eAAe,CACf,qBAAsB,CACtB,wBAAwB,CACxB,mCACJ","file":"7.c1bb4aba.chunk.css","sourcesContent":[".Page-not-found{\r\n    font-size:4vmin;\r\n    letter-spacing:0.3vmin;\r\n    text-transform:uppercase;\r\n    font-family: 'Montserrat', sans-serif;\r\n}"]}
