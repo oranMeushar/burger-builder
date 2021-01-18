@@ -1,0 +1,86 @@
+.form-container{
+    line-height: 6vmin;
+    font-size:2.5vmin;
+    width:fit-content;
+    padding:2vmin;
+    font-family: 'Montserrat', sans-serif;
+    margin:2vmin auto;
+
+}
+.form-container h1{
+    text-align: center;
+}
+
+.form-container label {
+    position:relative;
+    width:70%;
+    margin: 0 auto;
+}
+
+.form-container span {
+    position:absolute;
+    left:5.5vmin;
+    top:0;
+    opacity:0.5;
+    transition: all 0.3s ease;    
+}
+
+.form-container-form{
+    display:flex;
+    flex-direction: column;   
+}
+input:focus + span,
+input:not(:placeholder-shown) + span {
+    opacity:1;
+    color:white;
+    font-weight: bold;
+    transform: scale(0.75) translateY(-70%);
+  }
+
+  .form-container-form input{
+    font-size:2.5vmin;
+    background-color: rgba(194, 163, 127, 0);
+    letter-spacing: 0.3vmin;
+    outline:none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width:70%;
+}
+
+.form-container-form input:not(:last-child){
+    margin-bottom: 5vmin;   
+}
+
+.form-container .order{
+    font-size: 3.5vmin;
+    color:rgb(194, 191, 191);
+    padding:0.5vmin 1vmin;
+    letter-spacing:0.3vmin;
+    border-radius: 0.5rem;
+    outline:none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient( rgba(194, 163, 127, 0.582), rgba(226, 121, 0, 0.863));
+    transform:perspective(600rem) skewX(-25deg) rotateX(35deg);
+    transition:transform 0.2s linear;
+}
+
+.form-container .order::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left,transparent, rgba(255, 255, 255, 0.822), transparent);
+    transition: left 1s;
+}
+.form-container .order:hover::before{
+    left: 100%;
+}
+.form-container .order:hover{
+    transform:perspective(0) skewX(0) rotateX(0);
+    box-shadow: 0.8rem 0.6rem 0.5rem rgba(0, 0, 0, 0.116);
+}

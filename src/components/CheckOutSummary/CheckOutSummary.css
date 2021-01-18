@@ -1,0 +1,31 @@
+.CheckOutSummary{
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CheckOutSummary h1{
+    font-size: 5vmin;
+    margin-bottom: 20vmin;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CheckOutSummary button{
+    font-size:4vmin;
+    background-color:transparent;
+    outline:none;
+    border:none;
+}
+.CheckOutSummary button:hover{
+  cursor: pointer;
+}
+
+.CheckOutSummary-continue{
+    margin-right:3vmin;
+    color:green;
+}
+
+.CheckOutSummary-cancle{
+    color:red;
+}

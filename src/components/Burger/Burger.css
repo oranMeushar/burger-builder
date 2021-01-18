@@ -1,0 +1,152 @@
+.Burger{
+    height: 35vmin;
+    overflow: auto;
+}
+.Burger-ingredients{
+    font-size:3vmin;
+    letter-spacing:0.3vmin;
+}
+.Burger-bread-top {
+    height: 5.5vmin;
+    width: 28%;
+    background: linear-gradient(#bc581e, #e27b36);
+    border-radius: 50% 50% 0 0;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Burger-seeds1 {
+    width: 3vw;
+    height: 0.5vw;
+    position: absolute;
+    background-color: white;
+    left: 30%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(-20deg);
+    box-shadow: inset -2px -3px #c9c9c9;
+}
+
+ .Burger-seeds1:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: -150%;
+    top: -350%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px 2px #c9c9c9;
+  }
+ 
+.Burger-seeds1:before {
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background-color: white;
+    left: 150%;
+    top: 300%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px -3px #c9c9c9;
+  } 
+
+  .Burger-seeds2 {
+    width: 3vw;
+    height: 0.5vw;
+    position: absolute;
+    background-color: white;
+    left: 64%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(10deg);
+    box-shadow: inset -3px 0 #c9c9c9;
+  }
+  
+  .Burger-seeds2:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 150%;
+    top: -130%;
+    border-radius: 40%;
+    transform: rotate(140deg);
+    box-shadow: inset 1px 3px #c9c9c9;
+  }
+.Burger-bread-bottom {
+    height: 5.5vmin;
+    width: 28%;
+    background: linear-gradient(#F08E4A, #e27b36);
+    border-radius: 0 0 3rem 3rem;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 0 auto;
+}
+
+
+.Burger-meat {
+    width: 28%;
+    height: 2vmin;
+    background: linear-gradient(#7f3608, #702e05);
+    margin: 0.2vmin auto;
+    border-radius: 15px;
+}
+
+.Burger-cheese {
+    width: 28%;
+    height: 2vmin;
+    margin: 0.2vmin auto;
+    background: linear-gradient(#f4d004, #d6bb22);
+    border-radius: 20px;
+}
+
+.Burger-salad {
+    width: 28%;
+    height: 2vmin;
+    margin: 0.2vmin auto;
+    background: linear-gradient(#228c1d, #91ce50);
+    border-radius: 20px;
+}
+
+@media (max-width: 550px){
+    .Burger-seeds1,
+    .Burger-seeds2 {
+        width:5vmin;
+    }
+    .Burger-bread-top,
+    .Burger-bread-bottom,
+    .Burger-meat,
+    .Burger-cheese,
+    .Burger-salad{
+        width: 70%;
+    }
+
+    .Burger{
+        height: 55vmin;
+    }   
+}
+
+@media (max-width: 450px){
+    .Burger-seeds1,
+    .Burger-seeds2 {
+        width:6.5vmin;
+    }
+    .Burger-bread-top,
+    .Burger-bread-bottom,
+    .Burger-meat,
+    .Burger-cheese,
+    .Burger-salad{
+        width: 75%;
+    }
+    .Burger{
+        height: 80vmin;
+    }   
+}
+
+
+
+

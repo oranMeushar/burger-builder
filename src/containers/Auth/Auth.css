@@ -1,0 +1,98 @@
+.form-container{
+    line-height: 10vmin;
+    font-size:3vmin;
+    box-shadow: 0.8rem 0.6rem 1rem rgba(0, 0, 0, 0.014);
+    width:fit-content;
+    padding:2vmin;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-container p{
+    text-align: center;
+}
+
+.form-container label {
+    position:relative;
+    width:70%;
+    margin: 0 auto;
+}
+
+.form-container span {
+    position:absolute;
+    left:5.5vmin;
+    top:0;
+    opacity:0.5;
+    transition: all 0.3s ease;    
+}
+
+.form-container-form{
+    display:flex;
+    flex-direction: column;   
+}
+input:focus + span,
+input:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-70%);
+  }
+
+.form-container-form input{
+    font-size:2.5vmin;
+    background-color: rgba(194, 163, 127, 0);
+    letter-spacing: 0.3vmin;
+    outline:none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width:70%;
+    color:white;
+   
+}
+
+.buttons-wrapper {
+    text-align:center;
+}
+
+.form-container-submit,
+.form-container-switch{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vmin;
+    padding:1vmin 2vmin;
+    background-color: rgba(165, 126, 42, 0.507);
+    outline: none;
+    border:none;
+    border-radius: 0.5rem;
+    color:white;
+    cursor: pointer;
+}
+
+.auth-error-message{
+    font-size:3vmin;
+    width:fit-content;
+    padding:1vmin 2vmin;
+    background-color: rgba(255, 0, 0, 0.466);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+@media (max-width:650px){
+    .form-container{  
+        font-size:5vmin;
+    }
+
+    .form-container label {
+        width:100%;
+    }
+
+    .form-container span {
+        left:13.5vmin;   
+    }
+    .form-container-form input{
+        font-size:4.5vmin; 
+    }
+
+    .form-container-submit,
+    .form-container-switch{
+    margin-top: 5vmin;    
+    font-size: 5vmin;    
+}
+}

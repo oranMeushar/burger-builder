@@ -1,0 +1,26 @@
+.Order{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 3vmin;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto 2vmin auto;
+    box-shadow: 0.6rem 0.6rem 0.5rem rgba(0, 0, 0, 0.301);
+    border:1px solid rgb(173, 169, 169);
+    width: 80%;
+    padding-left: 1vmin;
+    
+}
+
+.Order ul{
+    padding:1vmin 3vmin;
+    margin-left: 3vmin;
+}
+.Order li{
+    padding:1vmin 0;
+}
+
+.Order h3, .Order p strong{
+    color:rgb(194, 121, 26);
+}
+
