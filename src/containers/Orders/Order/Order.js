@@ -5,7 +5,7 @@ const Order = (props) =>{
     
     let ingredients = [];
 
-    for (const key in props.ingredients) {
+    for (let key in props.ingredients) {
         ingredients.push(
             <li key={key}><strong>{key}: </strong>{props.ingredients[key].count}</li>
         )

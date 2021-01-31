@@ -4,7 +4,7 @@
 }
 .PanelButtons{
     display:grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.7fr 1fr;
     align-items:center;
     grid-column-gap: 3vmin;
     margin: 3vmin 0;
@@ -15,8 +15,7 @@
     letter-spacing:0.3vmin;
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
-    justify-self: flex-end;
-    
+    justify-self: flex-end;    
 }
 
 .PanelButtons-button-wrapper{
@@ -28,14 +27,20 @@
 .PanelButtons-button-wrapper button{
     font-family: 'Montserrat', sans-serif;
     font-size: 4vmin;
-    padding:0.5vmin 1vmin;
-    background-color: brown;
+    padding:0.5vmin 3vmin;
+    
     cursor: pointer;
     outline: none;
 }
 
+.PanelButtons-more{
+    background-color: rgb(106, 156, 106);
+}
+
 .PanelButtons-less{
+    background-color: brown;
     margin-right:2vmin;
+    
 }
 .PanelButtons-less:disabled{
     background-color:rgb(150, 150, 150);

@@ -6,10 +6,17 @@ const OrderSummary = (props) =>{
     let ingredients = [];
     let count = 0; 
 
-    for (const key in props.ingredients) {
+    for (let key in props.ingredients) {
+        let portion = ' prtion';
         count = props.ingredients[key].count;
+        if (key === 'cheese') {
+            key = 'Vegan Cheese'
+        }
+        if (count > 0) {
+            portion = ' portions'
+        }
         ingredients.push(
-            <li key={key}><strong>{key}: </strong>{count}</li>
+            <li key={key}><strong>{key}: </strong>{count + portion}</li>
         )  
     }
 
@@ -25,7 +32,7 @@ const OrderSummary = (props) =>{
         <div className={backDropclasses.join(' ')} onClick={props.clicked}>
             <div className={OrderSummaryClasses.join(' ')}>
                 <h2>Your order</h2>
-                <p>A delicious burger with the following ingredients</p>
+                <p>A delicious burger with the following ingredients:</p>
                 <ul>
                     {ingredients}
                 </ul>
