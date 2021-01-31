@@ -1,0 +1,2 @@
+(this["webpackJsonpburger-builder-2"]=this["webpackJsonpburger-builder-2"]||[]).push([[7],{61:function(e,n,u){},64:function(e,n,u){"use strict";u.r(n);var r=u(1);u(0),u(61);n.default=function(){return Object(r.jsx)("h1",{className:"Page-not-found",children:"Page was not found!"})}}}]);
+//# sourceMappingURL=7.47f9acc2.chunk.js.map
