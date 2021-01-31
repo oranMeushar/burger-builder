@@ -6,8 +6,12 @@ const Order = (props) =>{
     let ingredients = [];
 
     for (let key in props.ingredients) {
+        let title = key;
+        if (title === 'cheese') {
+            title = 'vegan cheese'
+        }
         ingredients.push(
-            <li key={key}><strong>{key}: </strong>{props.ingredients[key].count}</li>
+            <li key={key}><strong>{title}: </strong>{props.ingredients[key].count}</li>
         )
     }
 

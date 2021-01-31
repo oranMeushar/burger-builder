@@ -18,6 +18,7 @@
 }
 .Order li{
     padding:1vmin 0;
+    text-align: left;
 }
 
 .Order h3, .Order p strong{
