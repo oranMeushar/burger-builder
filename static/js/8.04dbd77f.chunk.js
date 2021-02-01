@@ -1,2 +1,2 @@
 (this["webpackJsonpburger-builder-2"]=this["webpackJsonpburger-builder-2"]||[]).push([[8],{63:function(t,e,n){"use strict";n.r(e);var o=n(1),r=n(22),u=n(23),c=n(25),a=n(24),i=n(0),b=n.n(i),s=n(3),p=n(14),l=n(26),f=function(t){Object(c.a)(n,t);var e=Object(a.a)(n);function n(){return Object(r.a)(this,n),e.apply(this,arguments)}return Object(u.a)(n,[{key:"componentDidMount",value:function(){localStorage.removeItem("token"),this.props.onLogout()}},{key:"render",value:function(){return Object(o.jsx)(s.a,{to:"/"})}}]),n}(b.a.Component);e.default=Object(p.b)(null,(function(t){return{onLogout:function(){return t(l.a())}}}))(f)}}]);
-//# sourceMappingURL=8.a9510d8d.chunk.js.map
+//# sourceMappingURL=8.04dbd77f.chunk.js.map
