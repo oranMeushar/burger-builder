@@ -13,7 +13,7 @@ const CheckOutSummary = (props) => {
                         onClick={props.checkOutContinue}>Continue</button>
                     <button 
                         className="CheckOutSummary-cancle"
-                        onClick={props.checkOutCancle}>Cancle</button>
+                        onClick={props.checkOutCancle}>Cancel</button>
             </div>   
         </div>
     )

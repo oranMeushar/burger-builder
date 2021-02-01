@@ -12,7 +12,11 @@ const OrderSummary = (props) =>{
         if (key === 'cheese') {
             key = 'Vegan Cheese'
         }
-        if (count > 0) {
+        if (count === 0) {
+            count = 'None';
+            portion = ''
+        }
+        if (count > 1) {
             portion = ' portions'
         }
         ingredients.push(
@@ -42,7 +46,7 @@ const OrderSummary = (props) =>{
                     <button 
                     className="OrderSummary-continue"
                     onClick={props.continued}>Continue</button>
-                    <button className="OrderSummary-cancle">Cancle</button>
+                    <button className="OrderSummary-cancle">Cancel</button>
                 </div>   
             </div>
         </div>
